@@ -1,2 +1,37 @@
-h1 {
-  color: blue; }
+.navbar {
+  background-color: #6c1d6c !important;
+  margin: 0;
+  padding: 15px; }
+
+.nav-link {
+  font-size: 22px;
+  color: white !important;
+  border-radius: 5px !important;
+  padding: 10px; }
+
+.nav-item {
+  padding: 5px; }
+
+nav div img {
+  height: 100px;
+  width: 100px; }
+
+main section {
+  padding-bottom: 10px; }
+
+main section div img {
+  width: 100vw;
+  height: 60vh; }
+
+.section-index-1 {
+  background-color: #3e0606;
+  padding: 40px; }
+  .section-index-1 h1 {
+    font-size: 60px;
+    text-align: center;
+    color: white; }
+  .section-index-1 p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: white; }

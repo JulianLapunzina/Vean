@@ -8,7 +8,7 @@
     
     <meta name="keywords" content="libros, venta, lectura, editoriales independientes, escritura, reading, commerce">
 
-    <meta name="description" content="Página de compra y venta de libros, editoriales, p2p">
+    <meta name="description" content="Página de compra y venta de libros, editoriales, p2p, sección principal, Home">
     
     <!-- Link a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -27,10 +27,11 @@
     <header>
 
         <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg bg-success">
+    <nav class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a href="index.html"><img class="logo navbar-brand" src="images/logo-1.png" alt="logo"></a>
+
             
                     <!-- Botón Hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,22 +43,26 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active btn" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active btn" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
                     </li>
                 
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active btn" href="pages/contacto.html">Contacto</a>
                     </li>
                 
                     <li class="nav-item">
-                    <a class="nav-link active">Disabled</a>
+                    <a class="nav-link active btn" href="pages/catalogo.html">Catálogo</a>
                     </li>
 
                 </ul>
             
                 <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -66,8 +71,49 @@
     
     
     <main>
+
         <section class="section-index-1">
-            <h1>encabezado de Vean</h1>
+            <h1>¿Qué es Vean?</h1>
+
+            <p>
+            Vean es un nuevo universo de libros donde autorxs pueden autopublicar, imprimir y vender sus obras de manera gratuita, mientras lectorxs interactúan entre sí en un renovado ecosistema de lecturas que se consiguen al instante.
+            Registrate como autor en nuestro formulario de ingreso y publicá tu libro. ¡Sí, así de fácil! 
+            Nosotros lo revisamos y en 24 horas va a estar disponible en nuestro carrito de compras en línea, donde lectorxs pueden conseguirlo como eBook o en formato físico, desde cualquier parte del país y sin necesidad de stock. Recibilo en la puerta de tu casa o retiralo por tu sucursal más cercana. 
+            Olvidate de estar meses buscando un ejemplar porque no se imprime más o no llega a tu ciudad, entrá a nuestra página y conocé tu nueva lectura de temporada.
+            </p>
+
+        </section>
+
+        <section>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <img src="images/bg-image.jpeg" class="d-block w-60" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/bg-image-2.jpeg" class="d-block w-60" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/logo.jpeg" class="d-block w-60" alt="...">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+        </div>
+
         </section>
     </main>
     
