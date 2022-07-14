@@ -66,3 +66,13 @@ footer div {
   footer div p {
     text-align: center;
     font-size: 25px; }
+
+
+
+/* Inscripción */
+
+.div-inscripcion {
+  display: flex;
+  justify-content: center;
+  padding:20px;
+}
