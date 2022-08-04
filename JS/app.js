@@ -3,7 +3,7 @@ const openCart = document.getElementById('open')
 const closeCart = document.getElementById('close')
 const modalCart = document.getElementById('modalCart')
 
-openCart.addEventListener("click", ()=>{
+openCart.addEventListener('click', ()=>{
     modalContainer.classList.toggle('modal-active')
 })
 

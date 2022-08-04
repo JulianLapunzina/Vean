@@ -66,7 +66,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-link active text-body"  id="open" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
+                        <button class="nav-link text-body"  id="open" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
                     </li>
 
 
@@ -81,6 +81,7 @@
     </nav>
     </header>
     <main>
+        <h1 style="text-align:center">¡Registrá tu libro!</h1>
         <div class="div-inscripcion">
             <form class="row g-3 d-flex justify-content-center">
                 <div class="col-md-6">
@@ -143,11 +144,15 @@
                 </form>
         </div>
 
-
-        <div>
-            <h3>Libros</h3>
-        </div>
-        <div id="product-container">
+        <section class="stock">
+            <h2>STOCK</h2>
+            <div id="libros"></div>
+        </section>
+        <section class="Libros">
+            <div>
+                <h2 style="text-align:center">Libros</h2>
+            </div>
+                <div id="product-container">
     
             <div class="modal-container" id="modal_container">
                 <div id="modalCart" class="modal-cart">
@@ -157,8 +162,8 @@
                 </div>
             </div>
         
-        </div>
-    
+            </div>
+        </section>
     </main>
 
         <!-- JavaScript Bundle with Popper -->

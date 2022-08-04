@@ -84,16 +84,16 @@
         let libro2 = new Libro ("tan cerca tan cerca","Ariel Duce Bemez", "27/12/2021", 1500, "poesía", 30455613)
         Libros.unshift(libro2)
 
-        // //Agrega el libro al párrafo que está debajo.
-        // Libros.forEach(el => {
-        // let nodo = document.createElement("div")
-        //     nodo.innerHTML = `<h3>${el.nombreDelLibro}</h3>
-        //                     <h3>${el.autor}</h3>
-        //                     <p>${el.categoria}</p>
-        //                     <p>${el.fechaDePublicacion}</p>
-        //                     <p>${el.precio}</p>`
-        // document.getElementById('libros').appendChild(nodo)
-        // })
+        //Agrega el libro al párrafo que está debajo.
+        Libros.forEach(el => {
+        let nodo = document.createElement("div")
+            nodo.innerHTML = `<h3>${el.nombreDelLibro}</h3>
+                                <h4>${el.autor}</h4>
+                                <p>${el.categoria}</p>
+                                <p>${el.fechaDePublicacion}</p>
+                                <p>${el.precio}</p>`
+        document.getElementById('libros').appendChild(nodo)
+        })
 
 
         // Foreach - Va a ser la función que tenga el catálogo completo de los libros existentes.

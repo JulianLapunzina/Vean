@@ -18,7 +18,9 @@ const cart = (productId) => {
         })
 
     }
+    mostrarEnCarrito()
 }
+
 
 function deleteProduct(e) {
     let btnClicked = e.target;
