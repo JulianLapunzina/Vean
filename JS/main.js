@@ -73,6 +73,9 @@
 
         // evento de escucha del boton para registro de libro. 
         let boton = document.getElementById('botonRegistro')
+        boton.onclick = (e) => {
+            e.preventDefault()
+        }
         boton.addEventListener("click", registrarLibro)
 
         // Dejo algunos libros creados ya para que el usuario pueda ver el catálogo de libros disponibles en el caso que quiera comprar
@@ -81,16 +84,16 @@
         let libro2 = new Libro ("tan cerca tan cerca","Ariel Duce Bemez", "27/12/2021", 1500, "poesía", 30455613)
         Libros.unshift(libro2)
 
-        //Agrega el libro al párrafo que está debajo.
-        Libros.forEach(el => {
-        let nodo = document.createElement("div")
-            nodo.innerHTML = `<h3>${el.nombreDelLibro}</h3>
-                            <h3>${el.autor}</h3>
-                            <p>${el.categoria}</p>
-                            <p>${el.fechaDePublicacion}</p>
-                            <p>${el.precio}</p>`
-        document.getElementById('libros').appendChild(nodo)
-        })
+        // //Agrega el libro al párrafo que está debajo.
+        // Libros.forEach(el => {
+        // let nodo = document.createElement("div")
+        //     nodo.innerHTML = `<h3>${el.nombreDelLibro}</h3>
+        //                     <h3>${el.autor}</h3>
+        //                     <p>${el.categoria}</p>
+        //                     <p>${el.fechaDePublicacion}</p>
+        //                     <p>${el.precio}</p>`
+        // document.getElementById('libros').appendChild(nodo)
+        // })
 
 
         // Foreach - Va a ser la función que tenga el catálogo completo de los libros existentes.
@@ -113,6 +116,9 @@
 
         //Event search with Filter
         let search = document.getElementById('search')
+        search.onclick = (e) => {
+            e.preventDefault()
+        }
         search.addEventListener('click', buscarLibro)
                                         //HASTA ACÁ
 
