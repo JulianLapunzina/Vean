@@ -3,10 +3,10 @@ const openCart = document.getElementById('open')
 const closeCart = document.getElementById('close')
 const modalCart = document.getElementById('modalCart')
 
-
 openCart.addEventListener('click', ()=>{
-    modalContainer.classList.toggle('modal-active')
+    modalContainer.classList.add('modal-active')
     console.log('Llegó el click')
+    console.log(modalContainer.classList)
 })
 
 
