@@ -3,12 +3,16 @@ const openCart = document.getElementById('open')
 const closeCart = document.getElementById('close')
 const modalCart = document.getElementById('modalCart')
 
+
 openCart.addEventListener('click', ()=>{
     modalContainer.classList.toggle('modal-active')
+    console.log('Llegó el click')
 })
+
 
 closeCart.addEventListener('click', ()=>{
     modalContainer.classList.remove('modal-active')
+    console.log('Llegó el segundo click')
 })
 
 modalContainer.addEventListener('click', ()=>{
