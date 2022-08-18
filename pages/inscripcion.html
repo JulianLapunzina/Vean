@@ -66,7 +66,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-link text-body"  id="open" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
+                        <button class="nav-link text-body"  id="open" href="../images/carrito-de-compras.png">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
                     </li>
 
 
@@ -78,9 +78,11 @@
                 </form>
             </div>
         </div>
+
     </nav>
     </header>
-    <main>
+    <main>        
+
         <h1 style="text-align:center">¡Registrá tu libro!</h1>
         <div class="div-inscripcion">
             <form class="row g-3 d-flex justify-content-center">
@@ -148,24 +150,22 @@
             <h2>STOCK</h2>
             <div id="libros"></div>
         </section>
+
         <section class="Libros">
             <div>
                 <h2 style="text-align:center">Libros</h2>
             </div>
-                <div id="product-container">
-    
-            <div class="modal-container" id="modal_container">
-                <div id="modalCart" class="modal-cart">
-                <button id="close" class="btn btn-danger btn-sm">X</button>
-                        <h3 id="cartTitle">Cart</h3>
-                    <div id="cart-container"></div>
-                </div>
-            </div>
-        
-            </div>
-        </section>
-    </main>
 
+            <div id="product-container"></div>
+                <div class="modal-container modal-active" id="modal_container">
+                    <div id="modalCart" class="modal-cart">
+                    <button id="close" class="btn btn-danger btn-sm">X</button>
+                            <h3 id="cartTitle">Cart</h3>
+                        <div id="cart-container"></div>
+                    </div>
+                </div>
+
+        </section>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <!-- Link a mi JS -->

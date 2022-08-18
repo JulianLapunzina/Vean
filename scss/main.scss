@@ -1,10 +1,10 @@
-
+@import './inscripcion.scss';
                                 // ----- HEADER - NAVEGACIÓN -----//
 
 .navbar {
     background-color: #814a81 !important;
     margin: 0;
-    height: 130px;
+    height: 100px;
     padding: 15px;
 }
 
@@ -177,4 +177,8 @@ footer div {
 
 h2 {
     text-align: center;
+}
+
+.Libros {
+    background-color: grey;
 }

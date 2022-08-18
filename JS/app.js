@@ -5,14 +5,11 @@ const modalCart = document.getElementById('modalCart')
 
 openCart.addEventListener('click', ()=>{
     modalContainer.classList.add('modal-active')
-    console.log('Llegó el click')
-    console.log(modalContainer.classList)
 })
 
 
 closeCart.addEventListener('click', ()=>{
     modalContainer.classList.remove('modal-active')
-    console.log('Llegó el segundo click')
 })
 
 modalContainer.addEventListener('click', ()=>{
@@ -23,6 +20,8 @@ modalCart.addEventListener('click', (e)=>{
     e.stopPropagation()
 })
 
+
+
 class Products {
     constructor (id, name, price, img, quantity) {
         this.id = id
@@ -32,6 +31,8 @@ class Products {
         this.quantity = quantity
     }
 }
+
+
 
 const products = []
 
