@@ -1,37 +1,6 @@
-        /*
-        const usuarios = []
-
-        class Usuario {
-            constructor(nombreDeUsuario, contrasenia) {
-            this.nombreDeUsuario = nombreDeUsuario
-            this.contrasenia = contrasenia
-            }
-        }
-        
-        const registrarUsuario = (nombredeUsuario, contrasenia) => {
-            nombreDeUsuario = prompt('Ingrese el nuevo nombre de Usuario')
-            contrasenia = prompt('Ingrese su nueva contraseña')
-            let usuarioNuevo = new Usuario (nombreDeUsuario, contrasenia)
-            usuarios.push(usuarioNuevo)
-        }
-        
-                // Usuarios ya creados que se almacenan para verificar si coincide o no con los que ingresa el usuario en un futuro
-        
-        const usuarioRuben = new Usuario ("Ruben", 12345)
-        usuarios.push(usuarioRuben)
-        const ususarioFernanda = new Usuario ("Fernanda",12345)
-        usuarios.unshift(ususarioFernanda)
-        
-        console.log(usuarios)
-        
-                // Registro de usuario
-        let bienvenida = alert('Bienvenido a Vean, para comenzar necesitamos que cree un nuevo Usuario')
-        registrarUsuario()
-        */
                         // Clase con función constructora del libro + comisión de la plataforma igualado al iva
-        
-        // alert('Perfecto, ahora comencemos a cargar los datos de su libro')
-        
+
+
         class Libro {
             constructor(nombredelLibro, autor, fechaDePublicacion, precio, categoria, id) {
             this.nombreDelLibro = nombredelLibro
@@ -59,7 +28,6 @@
             let id = prompt('Ingrese su número de documento para registrar el libro')
             let libroNuevo = new Libro (nombreDelLibro, autor, fechaDePublicacion, precio, categoria, id)
             Libros.push(libroNuevo)
-            Libros.join(',')
             let accion = confirm ('¡Felicitaciones! Su libro ha sido registrado exitosamente. ¿Desea verificar los datos? Si continua, al finalizar, por favor acepte en caso de que sus datos sean correctos o cancele para volver a realizar el proceso nuevamente')
             //el condicional de abajo lo que hace es que si el usuario confirma que los datos que ingresó están mal, vuelve a llamar a la función para que pueda agregarlos nuevamente, y además elimina los datos que ingresó viejos.
             if(accion != false) {
@@ -111,6 +79,7 @@
         let busquedaLibro = document.querySelector('#busqueda').value;
         const buscarLibro = () => {
             Libros.filter(libro => libro.nombreDelLibro == busquedaLibro)
+
         }
         console.log(buscarLibro) // ARRAY
 
@@ -128,18 +97,9 @@
         let stockLibroValor = Libros.some(libro => libro.nombreDelLibro == stockLibro)
         console.log(stockLibroValor) // true or false
 */
-/*
-        // Carrito de compras con reduce
-        const usuarioCompra = [{ precio: 2500}, {precio: 2000}] // precio de los libros (aún no sé cómo traerlos desde el otro array)
-        const usuarioCompraTotal = usuarioCompra.reduce((acc,el) => acc + el.precio, 0)
-        alert(`El precio de su compra es de ${usuarioCompraTotal}`)
-        
-*/ 
+
         // ordenar los libros alfabeticamente - se puede usar el metodo sort (a.nombre > b.nombre) No lo uso ahora porque no tiene sentido.
 
 
 
-        // console.log(Libros)
-        // const librosyusuarios = usuarios.concat(Libros)
-        // console.log(librosyusuarios)
 

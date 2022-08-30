@@ -1,6 +1,14 @@
 @import './inscripcion.scss';
+@import './media-queries.scss';
                                 // ----- HEADER - NAVEGACIÓN -----//
 
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
 .navbar {
     background-color: #814a81 !important;
     margin: 0;
@@ -11,18 +19,44 @@
 .nav-link {
     font-size: 22px;
     padding: 5px;
+    margin: 5px;
+    color: #fff;
+    border-radius: 5px;
+
 }
 
-.nav-item {
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.473);
+    transition: .7s;
+}
+
+.nav {
+    line-height: 40px;
     padding: 5px;
-}
-
-nav div img {
-    height: 100px;
-    width: 100px;
     border-radius: 10px;
 }
 
+nav div img {
+    border-radius: 10px;
+    height: 80px;
+    width: 120px;
+}
+
+.nav-div {
+    display: inline-block;
+}
+
+.checkbtn {
+    font-size: 22px;
+    color: #fff;
+    float: right;
+    line-height: 130px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
 
 
                                 // ----- INDEX SECTION 1 ------ //
@@ -30,7 +64,7 @@ nav div img {
     {
         background-image: url("https://i.pinimg.com/564x/2f/08/fb/2f08fbea20fde17178ad06bf7fab9ec8.jpg");        width: 100%;
         background-size: cover;
-        height: 100vh;
+        height: calc(100vh - 100px);
         width: 100%;
         padding: 40px;
         position: relative;

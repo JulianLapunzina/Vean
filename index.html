@@ -22,6 +22,9 @@
     <!-- Link a favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 
+    <!-- Link a fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+
     <!-- Título de la Página -->
     <title>Vean - Home</title>
 
@@ -40,34 +43,39 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                
+
+            
+            <div class="nav-div" id="navbarTogglerDemo02">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+                </label>
                     <!--  Lista del Nav -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="index.html">Home</a></button>
+                    <li class="nav">
+                        <a class="nav-link active"  href="index.html" >Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="pages/inscripcion.html">Inscripción</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="pages/inscripcion.html">Inscripción</a>
                     </li>
 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="pages/sobre-nosotros.html">Sobre Nosotros</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
                     </li>
                 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="pages/contacto.html">Contacto</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="pages/contacto.html">Contacto</a>
                     </li>
                 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="pages/catalogo.html">Catálogo</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="pages/catalogo.html">Catálogo</a>
                     </li>
 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light" id="open" href="#">Cart<i class="nav-link active"></i><span id="counter"></span></button>
-                    </li>
+                    <li class="nav">
+                        <button class="nav-link active" id="open" href="#">Cart<span id="counter"></span></button>
+                    </li> 
 
                 </ul>
             
@@ -75,6 +83,7 @@
                 <input class="form-control me-2" type="search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -137,14 +146,18 @@
             </p>
         </div>
     </footer>
-    
 
+
+    
+    <!--Sweet alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- Link a mi JS -->
     <script src="./JS/main.js"></script>
     <script src="./JS/app.js"></script>
     <script src="./JS/cart.js"></script>
+
 
 </body>
 </html>

@@ -67,7 +67,7 @@ const mostrarProductos = (products) => {
     const button = document.getElementById(`button${product.id}`)
     button.addEventListener('click', () => {
         cart(product.id)
-        alert(`Agregaste ${product.name}`)
+        Swal.fire(`Agregaste "${product.name}"`)
         })
     })
 }
