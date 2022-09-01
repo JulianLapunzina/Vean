@@ -20,10 +20,9 @@
     font-size: 22px;
     padding: 5px;
     margin: 5px;
-    color: #fff;
     border-radius: 5px;
-
 }
+
 
 li a:hover {
     background-color: rgba(255, 255, 255, 0.473);
@@ -108,8 +107,6 @@ nav div img {
 }
 
 
-                            //--------INDEX - SECTION - 2 ------//
-
 
                                             // ----FOOTER-----//
 
@@ -131,6 +128,7 @@ footer div {
 // Estilos del MODAL 
 
 
+
 /* Modal */
 .modal-container {
 
@@ -138,7 +136,7 @@ footer div {
     visibility: hidden;
     align-items: center;
     justify-content: center; 
-    background-color: transparent;
+    background-color: #814a81;
     width: 100%;
     height: 100vh;
     transition: opacity 0.3s ease;
@@ -156,16 +154,19 @@ footer div {
 
 .modal-cart{
     width: 50rem;
-    height: 30rem;
+    height: 40rem;
     background-color: black;
+    position: absolute;
+    margin: 0px;
 }
 
 #cartTitle{
-    margin: 5px 0;
-    padding:5px;
+    margin: 5px 5px;
+    padding: 20px;
     color: lightblue;
     position: relative;
-    top: 10px; left: 360px
+    left: 350px;
+    font-size: 30px;
 }
 
 #close{
@@ -176,12 +177,13 @@ footer div {
 
 .productInCart {
     color:black;
-    background-color: grey;
+    background-color: rgb(250, 250, 250);
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     margin: 10px 0;
-    padding: 5px 10px;
+    padding: 10px 20px;
     display: flex;
+    font-size: 20px;
     justify-content: space-between;
 }
 
@@ -193,6 +195,7 @@ footer div {
 
 #product-container {
     margin: 90px auto;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

@@ -38,11 +38,13 @@
         <div class="container-fluid">
             <a href="index.html"><img class="logo navbar-brand" src="images/logo-1.png" alt="logo"></a>
 
+
+
             
                     <!-- Botón Hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
 
             
             <div class="nav-div" id="navbarTogglerDemo02">
@@ -50,6 +52,7 @@
                 <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
                 </label>
+
                     <!--  Lista del Nav -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
@@ -57,33 +60,19 @@
                         <a class="nav-link active"  href="index.html" >Home</a>
                     </li>
 
+                    
                     <li class="nav">
                         <a class="nav-link active" href="pages/inscripcion.html">Inscripción</a>
                     </li>
 
                     <li class="nav">
-                        <a class="nav-link active" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-                
-                    <li class="nav">
-                        <a class="nav-link active" href="pages/contacto.html">Contacto</a>
-                    </li>
-                
-                    <li class="nav">
                         <a class="nav-link active" href="pages/catalogo.html">Catálogo</a>
                     </li>
 
-                    <li class="nav">
-                        <button class="nav-link active" id="open" href="#">Cart<span id="counter"></span></button>
-                    </li> 
+                    <button class="nav-link active"  id="open" href="../images/carrito-de-compras.png" style="background: none;border-radius: 24px;"><i class="fa-solid fa-cart-shopping"></i><span id="counter"></span>
 
                 </ul>
             
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-
             </div>
         </div>
     </nav>
@@ -91,6 +80,17 @@
     
     
     <main>
+
+        <!-- Modal Container !-->
+        <div class="modal-container" id="modal_container">
+            <div id="modalCart" class="modal-cart">
+                <button id="close" class="btn btn-danger btn-sm">X</button>
+                        <h3 id="cartTitle">Cart</h3>
+                    <div id="cart-container"></div>
+            </div>
+        </div>
+    
+
 
         <section class="section-index-1">
 

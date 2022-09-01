@@ -14,8 +14,16 @@
         <!-- Link de animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!-- Link a favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+
+    <!-- Link a fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+
+
+
         <!-- Título de la página -->
-    <title>vean - Catálogo</title>
+    <title>Vean - Catálogo</title>
 </head>
 <body>
     
@@ -34,44 +42,63 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 
+            <div class="nav-div" id="navbarTogglerDemo02">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+
                     <!--  Lista del Nav -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
-                    <li class="nav-item">
+                    <li class="nav">
                         <a class="nav-link active" href="../index.html">Home</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                    </li>
                 
-                    <li class="nav-item">
+                    <li class="nav">
                         <a class="nav-link active" href="catalogo.html" >Catálogo</a>
+                    </li>
+
+                    <li class="nav">
+                        <button class="nav-link active"  id="open" href="../images/carrito-de-compras.png" style="background: none;border-radius: 24px;"><i class="fa-solid fa-cart-shopping"></i><span id="counter"></span>
                     </li>
 
                 </ul>
             
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     </header>
+    <main>
+
+                <!-- Modal Container !-->
+    <div class="modal-container" id="modal_container">
+        <div id="modalCart" class="modal-cart">
+            <button id="close" class="btn btn-danger btn-sm">X</button>
+                    <h3 id="cartTitle">Cart</h3>
+                <div id="cart-container"></div>
+        </div>
+    </div>
+
+
+        <section>        
+            <button id="btn-DB">Obtener Datos</button>
+            <div id="catalogo"></div>
+        </section>
+
+    </main>
 
 
 
-
-
-
-
-
+    <!--Sweet alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Link a mi JS -->
+    <script src="../JS/main.js"></script>
+    <script src="../JS/app.js"></script>
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/fetch.js"></script>
+
 </body>
 </html>

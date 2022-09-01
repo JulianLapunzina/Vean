@@ -22,6 +22,10 @@
     <!-- Link a favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 
+    <!-- Link a fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+
+
     <!-- Título de la Página -->
     <title>Vean - Inscripción</title>
 
@@ -33,7 +37,7 @@
     <nav class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
-            <a href="index.html"><img class="logo navbar-brand" src="../images/logo-1.png" alt="logo"></a>
+            <a href="../index.html"><img class="logo navbar-brand" src="../images/logo-1.png" alt="logo"></a>
 
             
                     <!-- Botón Hamburguesa -->
@@ -42,46 +46,48 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 
+            <div class="nav-div" id="navbarTogglerDemo02">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+
                     <!--  Lista del Nav -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="../index.html">Home</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="../index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="./inscripcion.html">Inscripción</a></button>
-                    </li>
-
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="./sobre-nosotros.html">Sobre Nosotros</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="./inscripcion.html">Inscripción</a>
                     </li>
                 
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="./contacto.html">Contacto</a></button>
-                    </li>
-                
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light"><a class="nav-link active" href="./catalogo.html">Catálogo</a></button>
+                    <li class="nav">
+                        <a class="nav-link active" href="./catalogo.html">Catálogo</a>
                     </li>
 
-                    <li class="nav-item">
-                        <button class="nav-link text-body"  id="open" href="../images/carrito-de-compras.png">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
+                    <li class="nav">
+                        <button class="nav-link active"  id="open" href="../images/carrito-de-compras.png" style="background: none;border-radius: 24px;"><i class="fa-solid fa-cart-shopping"></i><span id="counter"></span>
                     </li>
-
-
                 </ul>
             
-                <form class="d-flex" role="search" type="submit">
-                <input class="form-control me-2" type="search" id="busqueda" aria-label="Search">
-                <button class="btn btn-outline-light" id="search">Search</button>
-                </form>
+
             </div>
         </div>
 
     </nav>
     </header>
-    <main>        
+    <main> 
+        
+        <!-- Modal Container !-->
+    <div class="modal-container" id="modal_container">
+        <div id="modalCart" class="modal-cart">
+            <button id="close" class="btn btn-danger btn-sm">X</button>
+                    <h3 id="cartTitle">Cart</h3>
+                <div id="cart-container"></div>
+        </div>
+    </div>
 
         <h1 style="text-align:center">¡Registrá tu libro!</h1>
         <div class="div-inscripcion">
@@ -157,13 +163,6 @@
             </div>
 
             <div id="product-container"></div>
-                <div class="modal-container modal-active" id="modal_container">
-                    <div id="modalCart" class="modal-cart">
-                    <button id="close" class="btn btn-danger btn-sm">X</button>
-                            <h3 id="cartTitle">Cart</h3>
-                        <div id="cart-container"></div>
-                    </div>
-                </div>
 
         </section>
 

@@ -43,7 +43,6 @@ const prod4 = new Products ("4", "Líquidos", 2500, "../images/liquidos.jpg", 5)
 const prod5 = new Products ("5", "El oficio de enamorarse", 2500, "../images/juancete.jpg", 3)
 
 products.push(prod1,prod2,prod3,prod4,prod5)
-console.log(products)
 
 
 

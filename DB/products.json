@@ -1,0 +1,57 @@
+[
+    {"id": 1,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 2,
+    "name": "Tan cerca tan cerca", 
+    "author": "Juan Báez Nudelman",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 3,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 4,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 5,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},  
+
+    {"id": 6,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 7,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3},
+
+    {"id": 8,
+    "name": "Tan cerca tan cerca", 
+    "author": "Ariel Duce Bemez",
+    "price": 2500,
+    "img": "../images/tancerca.png",
+    "stock": 3}
+]
