@@ -52,7 +52,7 @@ const mostrarProductos = (products) => {
     const productsContainer = document.getElementById('product-container')
     products.forEach(product => {
         const card = document.createElement('card')
-        card.innerHTML += `<div class="card" style="width:25rem;">
+        card.innerHTML += `<div class="card" style="width:12rem;">
                             <img src="${product.img}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">${product.name}</h5>

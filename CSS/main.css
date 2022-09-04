@@ -34,23 +34,19 @@
   box-sizing: border-box; }
 
 .navbar {
-  background-color: #814a81 !important;
+  background-color: #ffffff !important;
   margin: 0;
-  height: 100px;
+  height: 80px;
   padding: 15px; }
 
 .nav-link {
   font-size: 22px;
   padding: 5px;
   margin: 5px;
-  color: #fff;
   border-radius: 5px; }
 
-.formSearch {
-  align-self: flex-start; }
-
 li a:hover {
-  background-color: rgba(255, 255, 255, 0.473);
+  background-color: rgba(10, 10, 10, 0.473);
   transition: .7s; }
 
 .nav {
@@ -59,8 +55,7 @@ li a:hover {
   border-radius: 10px; }
 
 nav div img {
-  border-radius: 10px;
-  height: 80px;
+  height: 40px;
   width: 120px; }
 
 .nav-div {
@@ -78,7 +73,7 @@ nav div img {
   display: none; }
 
 .section-index-1 {
-  background-image: url("https://i.pinimg.com/564x/2f/08/fb/2f08fbea20fde17178ad06bf7fab9ec8.jpg");
+  background-image: url(../images/394862.jpg);
   width: 100%;
   background-size: cover;
   height: calc(100vh - 100px);
@@ -105,10 +100,10 @@ nav div img {
 .section-index-1::before {
   content: "";
   width: 93%;
-  height: 80%;
+  height: 75%;
   background-color: black;
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.4;
   border-radius: 10px; }
 
 .section-index-1 h1, p {
