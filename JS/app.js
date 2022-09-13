@@ -36,7 +36,7 @@ class Products {
 
 const products = []
 
-const prod1 = new Products ("1", "Tan cerca, tan cerca", 2500, '../images/tancerca.png', 3)
+const prod1 = new Products ("1", "Tan cerca, tan cerca", 2500, '../images/tanC.png', 3)
 const prod2 = new Products ("2", "Rocas Ígneas", 2000, '../images/rocasIgneas.png', 2)
 const prod3 = new Products ("3", "Tremendismos", 2500, "../images/tremendismos.png", 1)
 const prod4 = new Products ("4", "Líquidos", 2500, "../images/liquidos.jpg", 5)
@@ -47,7 +47,6 @@ products.push(prod1,prod2,prod3,prod4,prod5)
 
 
 // funcion para mostrar los productos
-
 const mostrarProductos = (products) => {
     const productsContainer = document.getElementById('product-container')
     products.forEach(product => {
@@ -70,5 +69,6 @@ const mostrarProductos = (products) => {
         })
     })
 }
+
 
 mostrarProductos(products)
